@@ -16,9 +16,9 @@ const TextForm = (props) => {
      function searchString() {
          let foundText=text.search(searchStr);
          if (foundText===-1)
-         alert("String Not Found")
+         props.showalert(" String Not Found",'warning')
          else
-         alert("String Found")            
+         props.showalert(" String Found",'success')      
      }
 
      function handleCopy() {
@@ -39,7 +39,7 @@ const TextForm = (props) => {
         <div className="container" style={{color:props.mode==='dark'?'white':'black'}}>
             <h1>{props.heading}</h1>
             <div className="mb-3">
-            <textarea className="form-control" value={text} id="myText" rows="5" onChange={handleonChange} style={{backgroundColor:props.mode==='dark'?'grey':'white',
+            <textarea className="form-control" value={text} id="myText" rows="5" onChange={handleonChange} style={{backgroundColor:props.mode==='dark'?'#2a2f47':'white',
             color:props.mode==='dark'?'white':'black'}}></textarea>
             </div>
             <button className="btn btn-primary mx-1" onClick={ConverttoUpper}>Convert to Uppercase</button>
@@ -47,7 +47,7 @@ const TextForm = (props) => {
             <button className="btn btn-primary mx-1" onClick={handleCopy}>Copy Text</button>
             <button className="btn btn-primary mx-1" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
             <input type="text" className="mx-1" placeholder="Search for a Word" onChange={(event)=> setstr(event.target.value)}
-            style={{backgroundColor:props.mode==='dark'?'grey':'white',
+            style={{backgroundColor:props.mode==='dark'?'#2a2f47':'white',
             color:props.mode==='dark'?'white':'black'}}/>
             <button className="btn btn-primary mx-1" onClick={searchString}>Search</button>
             <button className="btn btn-primary mx-1" onClick={()=> settext("")}>Clear Text</button>
