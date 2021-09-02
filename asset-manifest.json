@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Harry/static/css/main.a617e044.chunk.css",
+    "main.js": "/React-Harry/static/js/main.39724998.chunk.js",
+    "main.js.map": "/React-Harry/static/js/main.39724998.chunk.js.map",
+    "runtime-main.js": "/React-Harry/static/js/runtime-main.3785d4a0.js",
+    "runtime-main.js.map": "/React-Harry/static/js/runtime-main.3785d4a0.js.map",
+    "static/js/2.0eb33e4e.chunk.js": "/React-Harry/static/js/2.0eb33e4e.chunk.js",
+    "static/js/2.0eb33e4e.chunk.js.map": "/React-Harry/static/js/2.0eb33e4e.chunk.js.map",
+    "static/js/3.667009b6.chunk.js": "/React-Harry/static/js/3.667009b6.chunk.js",
+    "static/js/3.667009b6.chunk.js.map": "/React-Harry/static/js/3.667009b6.chunk.js.map",
+    "index.html": "/React-Harry/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/React-Harry/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.0eb33e4e.chunk.js.LICENSE.txt": "/React-Harry/static/js/2.0eb33e4e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3785d4a0.js",
+    "static/js/2.0eb33e4e.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.39724998.chunk.js"
+  ]
+}
