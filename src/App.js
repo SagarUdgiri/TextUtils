@@ -1,10 +1,10 @@
 import './App.css';
-// import About from './Components/About';
+import About from './Components/About';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
 import React, { useState } from 'react';
 import Alert from './Components/Alert'
-// import { BrowserRouter as Router,Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router,Route, Switch } from 'react-router-dom'
 
 function App() {
   // const titles=["Home","About","Contact"];
@@ -41,19 +41,18 @@ function App() {
   }
   return (
     <div >
-      {/* <Router> */}
+      <Router>
       <Navbar title="TextUtils" search={searched} mode={Mode} toggleMode={toggleMode}></Navbar>
       <Alert alert={alert}/>
       <div className="container my-3"> 
-      {/* <Switch> */}
-      {/* <Route exact path="/about" ><About/></Route> */}
-      {/* <Route path="/"> */}
+      <Switch>
+      <Route exact path="/about" ><About mode={Mode}/></Route>
+      <Route path="/">
         <TextForm showalert={SetAlert} heading="Enter Text to Analyz" mode={Mode} toggleMode={toggleMode}/>
-      {/* </Route>         */}
-      {/*  */}
-      {/* </Switch>  */}
+      </Route>        
+      </Switch> 
       </div>
-      {/* </Router> */}
+      </Router>
     </div>
   );
 }
