@@ -40,9 +40,6 @@ const TextForm = (props) => {
          props.showalert(" Extra Spaces are Removed :)",'success')
      }
 
-    //  function handleonChange(event) {
-    //      settext(event.target.value)
-    //  }
      textLength=text.split(' ').filter(element => {return element.length!==0}).length
     return (
         <div className="container" style={{color:props.mode==='dark'?'white':'black'}}>
