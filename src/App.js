@@ -35,7 +35,7 @@ function App() {
   }
   return (
     <div >
-      <Navbar title="TextUtils" search={searched} mode={Mode} toggleMode={toggleMode}></Navbar>
+      <Navbar title="TextUtils" mode={Mode} toggleMode={toggleMode}></Navbar>
       <Alert alert={alert}/>
       <div className="container my-3"> 
         <TextForm showalert={SetAlert} heading="Enter Text to Analyz" mode={Mode} toggleMode={toggleMode}/>        
